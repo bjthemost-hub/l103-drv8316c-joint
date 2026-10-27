@@ -1,0 +1,823 @@
+{
+	"version": "1.0",
+	"hasAllParsed": true,
+	"isNormalMRSProject": true,
+	"basic": {
+		"chipInfo": {
+			"vendor": "WCH",
+			"toolchain": "RISC-V",
+			"series": "CH32L103",
+			"rtos": "NoneOS",
+			"mcu": "CH32L103K8U",
+			"description": "Website: https://www.wch.cn/products/CH32L103.html?\\n ROM(byte): 64K, SRAM(byte): 20K, CHIP PINS: 48, GPIO PORTS: 37.\\nCH32L103 is an industrial-grade low-power general purpose microcontroller based on Highland Barley RISC-V core design. The CH32L103 has built-in USB and PD PHY, support PDUSB, including USB Host host and USB Device device function, USB PD and type C fast charge function, built-in low power timer, It provides a set of OPA operation amplifier, 3 sets of CMP voltage comparators, 4 sets of USART serial ports, 2 I2C interfaces, 2 SPI interfaces, 1 set of CAN interfaces, multiple sets of timers, 12-bit ADC, 10 Touchkeys and other peripheral resources.",
+			"tempratureScope": "CH32L103K8U6{-40℃~85℃},CH32L103K8U7{-40℃~105℃}",
+			"artifactType": "executable",
+			"link": "WCH-Link",
+			"peripheral_version": "2.0",
+			"calibrateSupport": false,
+			"calibrateCommand": "",
+			"UIConfigSupport": false,
+			"UIConfigCommand": "",
+			"externalFlashSupport": false
+		},
+		"linkedFolders": [],
+		"removedResources": [
+			{
+				"parentLogicPath": "",
+				"type": "file",
+				"name": "*.wvproj"
+			},
+			{
+				"parentLogicPath": "User",
+				"type": "file",
+				"name": "cmd.c.bak-adcprobe-20261014_085716"
+			},
+			{
+				"parentLogicPath": "User",
+				"type": "file",
+				"name": "cmd.c.bak-adcscan-20261014_090238"
+			},
+			{
+				"parentLogicPath": "User",
+				"type": "file",
+				"name": "cmd.c.bak-before-jeoc"
+			},
+			{
+				"parentLogicPath": "User",
+				"type": "file",
+				"name": "cmd.c.bak-before-safetygate"
+			},
+			{
+				"parentLogicPath": "User",
+				"type": "file",
+				"name": "cmd.c.bak-ccrd-20261014_084108"
+			},
+			{
+				"parentLogicPath": "User",
+				"type": "file",
+				"name": "cmd.c.bak-focgate-20261014"
+			},
+			{
+				"parentLogicPath": "User",
+				"type": "file",
+				"name": "cmd.c.bak-framealign-20261014_083613"
+			},
+			{
+				"parentLogicPath": "User",
+				"type": "file",
+				"name": "cmd.c.bak-include-20261014"
+			},
+			{
+				"parentLogicPath": "User",
+				"type": "file",
+				"name": "cmd.c.bak-peak-20261014_091336"
+			},
+			{
+				"parentLogicPath": "User",
+				"type": "file",
+				"name": "cmd.c.bak-pidknob-20261014"
+			},
+			{
+				"parentLogicPath": "User",
+				"type": "file",
+				"name": "cmd.c.bak-pvaccel-20261014"
+			},
+			{
+				"parentLogicPath": "User",
+				"type": "file",
+				"name": "cmd.c.bak-raw32-20261014_083347"
+			},
+			{
+				"parentLogicPath": "User",
+				"type": "file",
+				"name": "cmd.c.bak-strobe20261014_095124"
+			},
+			{
+				"parentLogicPath": "User",
+				"type": "file",
+				"name": "cmd.c.bak-wave03-20261014"
+			},
+			{
+				"parentLogicPath": "User",
+				"type": "file",
+				"name": "cmd.c.bak2-20261014_095406"
+			},
+			{
+				"parentLogicPath": "User",
+				"type": "file",
+				"name": "cmd.c.bak3-20261014_095751"
+			},
+			{
+				"parentLogicPath": "User",
+				"type": "file",
+				"name": "cmd.c.bak4-20261014_100034"
+			},
+			{
+				"parentLogicPath": "User",
+				"type": "file",
+				"name": "cmd.h.bak-focgate-20261014"
+			},
+			{
+				"parentLogicPath": "User",
+				"type": "file",
+				"name": "csense.c.bak-adcprobe-20261014_085716"
+			},
+			{
+				"parentLogicPath": "User",
+				"type": "file",
+				"name": "csense.c.bak-adcscan-20261014_090238"
+			},
+			{
+				"parentLogicPath": "User",
+				"type": "file",
+				"name": "csense.c.bak-before-jeoc"
+			},
+			{
+				"parentLogicPath": "User",
+				"type": "file",
+				"name": "csense.c.bak-before-safetygate"
+			},
+			{
+				"parentLogicPath": "User",
+				"type": "file",
+				"name": "csense.c.bak-peak-20261014_091336"
+			},
+			{
+				"parentLogicPath": "User",
+				"type": "file",
+				"name": "csense.c.bak-strobe20261014_095124"
+			},
+			{
+				"parentLogicPath": "User",
+				"type": "file",
+				"name": "csense.c.bak-therm-20261014"
+			},
+			{
+				"parentLogicPath": "User",
+				"type": "file",
+				"name": "csense.c.bak2-20261014_095406"
+			},
+			{
+				"parentLogicPath": "User",
+				"type": "file",
+				"name": "csense.c.bak3-20261014_095751"
+			},
+			{
+				"parentLogicPath": "User",
+				"type": "file",
+				"name": "csense.c.bak4-20261014_100034"
+			},
+			{
+				"parentLogicPath": "User",
+				"type": "file",
+				"name": "csense.h.bak-adcprobe-20261014_085716"
+			},
+			{
+				"parentLogicPath": "User",
+				"type": "file",
+				"name": "csense.h.bak-adcscan-20261014_090238"
+			},
+			{
+				"parentLogicPath": "User",
+				"type": "file",
+				"name": "csense.h.bak-before-jeoc"
+			},
+			{
+				"parentLogicPath": "User",
+				"type": "file",
+				"name": "csense.h.bak-before-safetygate"
+			},
+			{
+				"parentLogicPath": "User",
+				"type": "file",
+				"name": "csense.h.bak-peak-20261014_091336"
+			},
+			{
+				"parentLogicPath": "User",
+				"type": "file",
+				"name": "csense.h.bak-strobe20261014_095124"
+			},
+			{
+				"parentLogicPath": "User",
+				"type": "file",
+				"name": "csense.h.bak-therm-20261014"
+			},
+			{
+				"parentLogicPath": "User",
+				"type": "file",
+				"name": "csense.h.bak4-20261014_100034"
+			},
+			{
+				"parentLogicPath": "User",
+				"type": "file",
+				"name": "drv8316c.c.bak-adcprobe-20261014_085716"
+			},
+			{
+				"parentLogicPath": "User",
+				"type": "file",
+				"name": "drv8316c.c.bak-before-safetygate"
+			},
+			{
+				"parentLogicPath": "User",
+				"type": "file",
+				"name": "drv8316c.h.bak-adcprobe-20261014_085716"
+			},
+			{
+				"parentLogicPath": "User",
+				"type": "file",
+				"name": "foc_motor.c.bak-angdmeas-20261014"
+			},
+			{
+				"parentLogicPath": "User",
+				"type": "file",
+				"name": "foc_motor.c.bak-before-safetygate"
+			},
+			{
+				"parentLogicPath": "User",
+				"type": "file",
+				"name": "foc_motor.c.bak-loopgate-20261014"
+			},
+			{
+				"parentLogicPath": "User",
+				"type": "file",
+				"name": "foc_motor.h.bak-loopgate-20261014"
+			},
+			{
+				"parentLogicPath": "User",
+				"type": "file",
+				"name": "foc_pid.c.bak-angdmeas-20261014"
+			},
+			{
+				"parentLogicPath": "User",
+				"type": "file",
+				"name": "foc_pid.c.bak-loopgate-20261014"
+			},
+			{
+				"parentLogicPath": "User",
+				"type": "file",
+				"name": "foc_pid.c.bak-pidargorder-20261014"
+			},
+			{
+				"parentLogicPath": "User",
+				"type": "file",
+				"name": "foc_pid.c.bak-pidknob-20261014"
+			},
+			{
+				"parentLogicPath": "User",
+				"type": "file",
+				"name": "foc_pid.c.bak-speedup-20261014_104934"
+			},
+			{
+				"parentLogicPath": "User",
+				"type": "file",
+				"name": "foc_pid.h.bak-angdmeas-20261014"
+			},
+			{
+				"parentLogicPath": "User",
+				"type": "file",
+				"name": "foc_pid.h.bak-loopgate-20261014"
+			},
+			{
+				"parentLogicPath": "User",
+				"type": "file",
+				"name": "foc_pid.h.bak-pidargorder-20261014"
+			},
+			{
+				"parentLogicPath": "User",
+				"type": "file",
+				"name": "foc_pid.h.bak-pidknob-20261014"
+			},
+			{
+				"parentLogicPath": "User",
+				"type": "file",
+				"name": "foc_sensor.c.bak-ccrd-20261014_084108"
+			},
+			{
+				"parentLogicPath": "User",
+				"type": "file",
+				"name": "foc_sensor.c.bak-framealign-20261014_083613"
+			},
+			{
+				"parentLogicPath": "User",
+				"type": "file",
+				"name": "foc_sensor.c.bak-raw32-20261014_083347"
+			},
+			{
+				"parentLogicPath": "User",
+				"type": "file",
+				"name": "foc_sensor.c.bak-speedup-20261014_104934"
+			},
+			{
+				"parentLogicPath": "User",
+				"type": "file",
+				"name": "foc_sensor.h.bak-ccrd-20261014_084108"
+			},
+			{
+				"parentLogicPath": "User",
+				"type": "file",
+				"name": "foc_sensor.h.bak-framealign-20261014_083613"
+			},
+			{
+				"parentLogicPath": "User",
+				"type": "file",
+				"name": "foc_sensor.h.bak-raw32-20261014_083347"
+			},
+			{
+				"parentLogicPath": "User",
+				"type": "file",
+				"name": "foc_sensor.h.bak-speedup-20261014_104934"
+			},
+			{
+				"parentLogicPath": "User",
+				"type": "file",
+				"name": "main.c.bak-adcscan-20261014_090238"
+			},
+			{
+				"parentLogicPath": "User",
+				"type": "file",
+				"name": "main.c.bak-before-jeoc"
+			},
+			{
+				"parentLogicPath": "User",
+				"type": "file",
+				"name": "main.c.bak-before-safetygate"
+			},
+			{
+				"parentLogicPath": "User",
+				"type": "file",
+				"name": "main.c.bak-ccrd-20261014_084108"
+			},
+			{
+				"parentLogicPath": "User",
+				"type": "file",
+				"name": "main.c.bak-focgate-20261014"
+			},
+			{
+				"parentLogicPath": "User",
+				"type": "file",
+				"name": "main.c.bak-loopgate-20261014"
+			},
+			{
+				"parentLogicPath": "User",
+				"type": "file",
+				"name": "main.c.bak-raw32-20261014_083347"
+			},
+			{
+				"parentLogicPath": "User",
+				"type": "file",
+				"name": "main.c.bak-therm-20261014"
+			},
+			{
+				"parentLogicPath": "User",
+				"type": "file",
+				"name": "main.c.bak-txfix20261014"
+			},
+			{
+				"parentLogicPath": "User",
+				"type": "file",
+				"name": "motion_pv.c.bak-focgate-20261014"
+			},
+			{
+				"parentLogicPath": "User",
+				"type": "file",
+				"name": "motion_pv.c.bak-loopgate-20261014"
+			},
+			{
+				"parentLogicPath": "User",
+				"type": "file",
+				"name": "motion_pv.c.bak-openloop-20261013_230929"
+			},
+			{
+				"parentLogicPath": "User",
+				"type": "file",
+				"name": "motion_pv.c.bak-pvaccel-20261014"
+			},
+			{
+				"parentLogicPath": "User",
+				"type": "file",
+				"name": "motion_pv.c.bak-stallgate-20261013_231212"
+			},
+			{
+				"parentLogicPath": "User",
+				"type": "file",
+				"name": "motion_pv.c.bak-therm-20261014"
+			},
+			{
+				"name": "motion_pv.h.bak-pv2000-20261014",
+				"parentLogicPath": "User",
+				"type": "file"
+			},
+			{
+				"name": "motion_pv.h.bak-pv600-20261014",
+				"parentLogicPath": "User",
+				"type": "file"
+			},
+			{
+				"name": "motion_pv.h.bak-pvaccel-20261014",
+				"parentLogicPath": "User",
+				"type": "file"
+			}
+		],
+		"projectName": "L103_DRV8316C_FOC_V2",
+		"architecture": "RISC-V",
+		"projectType": "c"
+	},
+	"buildConfig": {
+		"configurations": [
+			{
+				"buildArtifact": {
+					"artifact_name": "${ProjName}",
+					"artifact_extension": "elf",
+					"output_prefix": "",
+					"artifact_type": "Executable"
+				},
+				"parallelizationNumber": "optimal",
+				"stop_on_first_build_error": true,
+				"pre_script": "",
+				"pre_script_description": "",
+				"post_script": "",
+				"post_script_description": "",
+				"excludeResources": [
+					"${project}/User/main_i2conly.c",
+					"${project}/Startup/startup_ch32v20x_D8W.S",
+					"${project}/Startup/startup_ch32v20x_D8.S"
+				],
+				"optimization": {
+					"level": "size",
+					"message_length": true,
+					"char_is_signed": true,
+					"function_sections": true,
+					"data_sections": true,
+					"no_common_unitialized": true,
+					"do_not_inline_functions": false,
+					"assume_freestanding_environment": false,
+					"disable_builtin": false,
+					"single_precision_constants": false,
+					"position_independent_code": false,
+					"link_time_optimizer": true,
+					"disable_loop_invariant_move": false,
+					"optimize_unused_sections_declared_as_high_code": false,
+					"code_generation_without_hardware_floating": false,
+					"use_pipelines": false,
+					"show_caret_indicating_the_column": false,
+					"calling_convention_variant": false,
+					"other_optimization_flags": ""
+				},
+				"warnings": {
+					"check_syntax_only": false,
+					"pedantic": false,
+					"pedantic_warnings_as_errors": false,
+					"inhibit_all_warnings": false,
+					"warn_on_various_unused_elements": true,
+					"warn_on_uninitialized_variables": true,
+					"enable_all_common_warnings": false,
+					"enable_extra_warnings": false,
+					"warn_on_undeclared_global_function": false,
+					"warn_on_implicit_conversions": false,
+					"warn_if_pointer_arthmetic": false,
+					"warn_if_padding_is_included": false,
+					"warn_if_shadowed_variable": false,
+					"warn_if_suspicious_logical_ops": false,
+					"warn_if_struct_is_returned": false,
+					"warn_if_floats_are_compared_as_equal": false,
+					"generate_errors_instead_of_warnings": false,
+					"other_warning_flags": ""
+				},
+				"debugging": {
+					"debug_level": "default",
+					"debug_format": "default",
+					"generate_prof_information": false,
+					"generate_gprof_information": false,
+					"other_debugging_flags": ""
+				},
+				"assembler": {
+					"preprocessor": {
+						"use_preprocessor": true,
+						"do_not_search_system_directories": false,
+						"preprocess_only": false,
+						"defined_symbols": [],
+						"undefined_symbols": []
+					},
+					"includes": {
+						"include_paths": [
+							"${project}/SRC/Startup"
+						],
+						"include_system_paths": [],
+						"include_files": []
+					},
+					"other_warning_flags": "",
+					"miscellaneous": {
+						"assembler_flags": [],
+						"generate_assembler_listing": false,
+						"save_temporary_files": false,
+						"verbose": false,
+						"other_assembler_flags": ""
+					}
+				},
+				"ccompiler": {
+					"preprocessor": {
+						"do_not_search_system_directories": false,
+						"preprocess_only": false,
+						"defined_symbols": [],
+						"undefined_symbols": []
+					},
+					"includes": {
+						"include_paths": [
+							"${project}/SRC/Debug",
+							"${project}/SRC/Core",
+							"${project}/User",
+							"${project}/SRC/Peripheral/inc"
+						],
+						"include_system_paths": [],
+						"include_files": []
+					},
+					"optimization": {
+						"language_standard": "gnu99",
+						"other_optimization_flags": ""
+					},
+					"warnings": {
+						"warn_if_a_global_function_has_no_prototype": false,
+						"warn_if_a_function_has_no_arg_type": false,
+						"warn_if_wrong_cast": false,
+						"other_warning_flags": ""
+					},
+					"miscellaneous": {
+						"generate_assembler_listing": false,
+						"save_temporary_files": false,
+						"verbose": false,
+						"other_compiler_flags": ""
+					}
+				},
+				"cppcompiler": {
+					"preprocessor": {
+						"do_not_search_system_directories": false,
+						"do_not_search_system_cpp_directories": false,
+						"preprocess_only": false,
+						"defined_symbols": [],
+						"undefined_symbols": []
+					},
+					"includes": {
+						"include_paths": [],
+						"include_system_paths": [],
+						"include_files": []
+					},
+					"optimization": {
+						"cpp_language_standard": "gnucpp11",
+						"abi_version": "0",
+						"do_not_use_exceptions": false,
+						"do_not_use_rtti": false,
+						"do_not_use__cxa_atexit": false,
+						"do_not_use_thread_safe_statics": false,
+						"other_optimization_flags": ""
+					},
+					"warnings": {
+						"warn_on_abi_violations": false,
+						"warn_on_class_privacy": false,
+						"warn_on_no_except_expressions": false,
+						"warn_on_virtual_destructors": false,
+						"warn_on_uncast_null": false,
+						"warn_on_sign_promotion": false,
+						"warn_about_effictive_cpp_violcations": false,
+						"other_warning_flags": ""
+					},
+					"miscellaneous": {
+						"generate_assembler_listing": false,
+						"save_temporary_files": false,
+						"verbose": false,
+						"other_compiler_flags": ""
+					}
+				},
+				"clinker": {
+					"general": {
+						"scriptFiles": [
+							"${project}/SRC/Ld/Link.ld"
+						],
+						"do_not_use_standard_start_files": true,
+						"do_not_use_default_libraries": false,
+						"no_startup_or_default_libs": false,
+						"remove_unused_sections": true,
+						"print_removed_sections": false,
+						"omit_all_symbol_information": false
+					},
+					"libraries": {
+						"libraries": [
+							"m"
+						],
+						"library_search_path": []
+					},
+					"miscellaneous": {
+						"picolibc": "disabled",
+						"linker_flags": [],
+						"other_objects": [],
+						"generate_map": "\"${BuildArtifactFileBaseName}.map\"",
+						"cross_reference": false,
+						"print_link_map": false,
+						"use_newlib_nano": true,
+						"use_float_with_nano_printf": false,
+						"use_float_with_nano_scanf": false,
+						"do_not_use_syscalls": true,
+						"verbose": false,
+						"use_wch_printffloat": false,
+						"use_wch_printf": false,
+						"use_iqmath": false,
+						"other_linker_flags": ""
+					}
+				},
+				"cpplinker": {
+					"general": {
+						"scriptFiles": [
+							"${project}/SRC/Ld/Link.ld"
+						],
+						"do_not_use_standard_start_files": true,
+						"do_not_use_default_libraries": false,
+						"no_startup_or_default_libs": false,
+						"remove_unused_sections": true,
+						"print_removed_sections": false,
+						"omit_all_symbol_information": false
+					},
+					"libraries": {
+						"libraries": [
+							"m"
+						],
+						"library_search_path": []
+					},
+					"miscellaneous": {
+						"picolibc": "disabled",
+						"linker_flags": [],
+						"other_objects": [],
+						"generate_map": "\"${BuildArtifactFileBaseName}.map\"",
+						"cross_reference": false,
+						"print_link_map": false,
+						"use_newlib_nano": true,
+						"use_float_with_nano_printf": false,
+						"use_float_with_nano_scanf": false,
+						"do_not_use_syscalls": true,
+						"verbose": false,
+						"use_wch_printffloat": false,
+						"use_wch_printf": false,
+						"use_iqmath": false,
+						"other_linker_flags": ""
+					}
+				},
+				"archiver": {
+					"archiver_flags": "-r",
+					"libOutputPrefix": "lib"
+				},
+				"createFlash": {
+					"enabled": true,
+					"outputFileFormat": "ihex",
+					"copy_only_section_text": false,
+					"copy_only_section_data": false,
+					"copy_only_sections": [],
+					"create_algorithm_file": false,
+					"other_flags": ""
+				},
+				"createList": {
+					"enabled": true,
+					"display_source": false,
+					"display_all_headers": true,
+					"demangle_names": true,
+					"display_debug_info": false,
+					"disassemble": true,
+					"display_file_headers": false,
+					"display_line_numbers": false,
+					"display_relocation_info": false,
+					"display_symbols": false,
+					"wide_lines": false,
+					"other_flags": ""
+				},
+				"printSize": {
+					"enabled": true,
+					"size_format": "berkeley",
+					"hex": false,
+					"show_totals": false,
+					"other_flags": ""
+				},
+				"configVariables": [],
+				"riscvTargetProcessor": {
+					"architecture": "rv32i",
+					"multiply_extension": true,
+					"atomic_extension": true,
+					"floating_point": "none",
+					"compressed_extension": true,
+					"extra_compressed_extension": true,
+					"bit_extension": false,
+					"multiplication_subset_of_the_M_extension": false,
+					"vector_cryptography_extensions": "",
+					"integer_ABI": "ilp32",
+					"floating_point_ABI": "none",
+					"tuning": "default",
+					"code_model": "default",
+					"small_data_limit": 8,
+					"align": "default",
+					"save_restore": true,
+					"other_target_flags": ""
+				},
+				"component_toolchain": "${WCH:Toolchain:GCC8}",
+				"name": "obj"
+			}
+		]
+	},
+	"flashConfig": {
+		"mcutype": "CH32L10x",
+		"address": "0x08000000",
+		"target_path": "obj/L103_DRV8316C_FOC_V2.hex",
+		"clkSpeed": "High",
+		"debug_interface_mode": "1-wire serial",
+		"erase": true,
+		"program": true,
+		"verify": true,
+		"reset": true,
+		"sdiPrintf": false,
+		"disablepowerout": false,
+		"clearcodeflash": false,
+		"disablecodeprotect": false,
+		"flashType": "",
+		"asmFile_path": "",
+		"exepath": "",
+		"exearguments": ""
+	},
+	"debugConfigurations": {
+		"openOCDCfg": {
+			"useLocalOpenOCD": true,
+			"executable": "${WCH:OpenOCD:default}",
+			"gdbport": 3333,
+			"telnetport": 4444,
+			"tclport": 6666,
+			"configOptions": [
+				"-f \"${WCH:OpenOCD:default}/bin/wch-riscv.cfg\""
+			],
+			"host": "127.0.0.1",
+			"port": 3333,
+			"skipDownloadBeforeDebug": false,
+			"enablePageEraser": false,
+			"enableNoZeroWaitingAreaFlash": false
+		},
+		"gdbCfg": {
+			"executable": "${WCH:Toolchain:GCC8}",
+			"options": [],
+			"commands": [
+				"set mem inaccessible-by-default off",
+				"set architecture riscv:rv32",
+				"set remotetimeout unlimited",
+				"set disassembler-options xw"
+			]
+		},
+		"startup": {
+			"initCommands": {
+				"initReset": true,
+				"initResetType": "init",
+				"additionalCommands": [],
+				"armSemihosting": false,
+				"armSemihosting_old": false
+			},
+			"loadedFiles": {
+				"loadSymbols": true,
+				"useProjBinaryForSymbols": true,
+				"useFileForSymbols": false,
+				"symbolFile": "",
+				"symbolFileOffset": "",
+				"loadImage": true,
+				"useProjBinaryForImage": true,
+				"useFileForImage": false,
+				"executableFile": "",
+				"executableFileOffset": ""
+			},
+			"runCommands": {
+				"runReset": true,
+				"runResetType": "halt",
+				"additionalCommands": [],
+				"setBreakAt": "handle_reset",
+				"continue": true,
+				"setBreak": true,
+				"setProgramCounter": false,
+				"setProgramCounterAddress": ""
+			},
+			"debugInRAM": false
+		},
+		"svdpath": "${WCH:SDK:default}/RISC-V/CH32L103/NoneOS/CH32L103xx.svd",
+		"output": {
+			"showDebugGDBTrace": true,
+			"saveDebugOutputToFile": false,
+			"showDebugOutputTimestamps": true
+		},
+		"reserve": {
+			"PROGRAM_NAME": "obj/L103_DRV8316C_FOC_V2.elf",
+			"PROJECT_ATTR": "L103_DRV8316C_FOC_V2",
+			"PROJECT_BUILD_CONFIG_AUTO_ATTR": true,
+			"PROJECT_BUILD_CONFIG_ID_ATTR": "",
+			"ATTR_BUILD_BEFORE_LAUNCH_ATTR": 2,
+			"GdbServerAllocateConsole": true,
+			"GdbServerAllocateTelnetConsole": false,
+			"StartGdbCLient": true,
+			"UPDATE_THREADLIST_ON_SUSPEND": false
+		}
+	},
+	"removedResources": [
+		{
+			"parentLogicPath": "",
+			"type": "file",
+			"name": "*.wvproj"
+		}
+	]
+}
