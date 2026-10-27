@@ -5,6 +5,11 @@
 一套可以直接拿去复现的关节电机方案：**CH32L103 主控 + DRV8316C 三相驱动 + MT6701 磁编码器**
 的驱动板，跑 FOC 的固件、Qt 上位机，以及配套的**两级行星减速机（J 版，25:1）**。
 
+![演示](media/demo.gif)
+
+> 实拍演示：CH32L103 + DRV8316C 板 + MT6701 + 两级行星减速机，上位机经 CAN 使能、走位、连续转。
+> 视频里的电源表与背景已由 AI 打码处理。
+
 MIT License。
 
 ---
@@ -15,8 +20,7 @@ MIT License。
 |---|---|
 | `hardware/` | KiCad 工程（原理图 + PCB，KiCad 10），`gerber/` 里是出板文件 |
 | `firmware/` | CH32L103 固件（FOC V2），Makefile + MounRiver Studio 工程两套都在 |
-| `gui/` | Qt 上位机 `L103MotorControl`（串口 / CAN 两种通道） |
-| `gearbox-J/` | 两级行星减速机 J 版（25:1）：STEP / STL、渲染、尺寸图、打印装配说明 |
+| `gearbox-J/` | 两级行星减速机 J 版（25:1）：**只给 STEP** + 打印装配说明 |
 | `docs/` | 调参手册、低速 FOC 调试方法与坑、编码器磁场核对、硬件说明 |
 
 ---
@@ -73,7 +77,9 @@ make flash OPENOCD='"<MounRiver>/resources/app/resources/win32/components/WCH/Op
 
 ## 三、上位机
 
-`gui/` 是 Qt 工程（`L103MotorControl.pro`，Qt 5/6 均可编），功能：参数页签（读写 RAM / 存 Flash）、
+上位机在独立仓库 [`l103-servo-gui`](https://github.com/bjthemost-hub/l103-servo-gui)（同一套 GUI 也支持 DRV8313 板）。
+
+Qt 工程（`L103MotorControl.pro`，Qt 5/6 均可编），功能：参数页签（读写 RAM / 存 Flash）、
 对齐 / 使能 / 速度 / 走位 / 序列、状态与波形显示，通道可选串口或 CAN。
 
 ## 四、减速机（J 版，25:1）

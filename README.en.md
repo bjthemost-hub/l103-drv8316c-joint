@@ -6,6 +6,12 @@ A complete, reproducible joint-motor design: a driver board built around
 **CH32L103 MCU + DRV8316C three-phase gate driver + MT6701 magnetic encoder**,
 with FOC firmware, a Qt host application, and a matching **2-stage planetary gearbox (J revision, 25:1)**.
 
+![demo](media/demo.gif)
+
+> Live demo: CH32L103 + DRV8316C board with the MT6701 encoder and the 2-stage planetary gearbox;
+> the host application enables, indexes and spins over CAN. The bench supply and background
+> were masked by AI.
+
 MIT License.
 
 ---
@@ -16,8 +22,7 @@ MIT License.
 |---|---|
 | `hardware/` | KiCad 10 project (schematic + PCB); `gerber/` holds fabrication output |
 | `firmware/` | CH32L103 FOC V2 firmware — both a Makefile build and a MounRiver Studio project |
-| `gui/` | Qt host application `L103MotorControl` (serial or CAN) |
-| `gearbox-J/` | 2-stage planetary gearbox, J revision (25:1): STEP/STL, renders, dimension drawing, print & assembly notes |
+| `gearbox-J/` | 2-stage planetary gearbox, J revision (25:1): **STEP only** plus print & assembly notes |
 | `docs/` | Tuning manual, low-speed FOC debugging notes, encoder magnetic-field check, hardware notes |
 
 ---
@@ -75,7 +80,8 @@ You can also open `firmware/L103_DRV8316C_FOC_V2.wvproj` in MounRiver Studio 2, 
 
 ## 3. Host application
 
-`gui/` is a Qt project (`L103MotorControl.pro`, builds with Qt 5 or 6): parameter tabs (RAM write / Flash save),
+The host application lives in its own repo: [`l103-servo-gui`](https://github.com/bjthemost-hub/l103-servo-gui)
+(also drives the DRV8313 board). The Qt project (`L103MotorControl.pro`, builds with Qt 5 or 6): parameter tabs (RAM write / Flash save),
 align / enable / velocity / move / sequence, status and waveform display, and a choice of serial or CAN transport.
 
 ## 4. Gearbox (J revision, 25:1)
